@@ -1,0 +1,109 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Chivo", sans-serif;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slideShow 10s infinite linear;
+    animation-timing-function: steps(1, start); /* or steps(1, end) */
+}
+
+@keyframes slideShow {
+    0% { background-image: url('dumplingsIMG/image1.jpg'); }
+    11% { background-image: url('dumplingsIMG/image2.jpg'); }
+    22% { background-image: url('dumplingsIMG/image3.jpg'); }
+    33% { background-image: url('dumplingsIMG/image4.jpg'); }
+    44% { background-image: url('dumplingsIMG/image5.jpg'); }
+    55% { background-image: url('dumplingsIMG/image6.jpg'); }
+    66% { background-image: url('dumplingsIMG/image7.jpg'); }
+    77% { background-image: url('dumplingsIMG/image8.jpg'); }
+    88% { background-image: url('dumplingsIMG/image9.jpg'); }
+    100% { background-image: url('dumplingsIMG/image1.jpg'); }
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo img {
+    width: 250px; /* Adjust the width as needed */
+    height: auto;
+}
+
+
+.social-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.subscription-box {
+    text-align: center;
+    color: white;
+    width: 80%;
+}
+
+.subscription-box h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: "Rowdies", sans-serif;
+}
+
+.subscription-box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: "Chivo", sans-serif;
+    line-height: 1.6; /* Adjust the line height as needed */
+
+}
+
+.subscription-box input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 50%; /* Adjust the width as needed */
+    font-family: "Chivo", sans-serif;
+}
+
+.subscription-box button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #D0021B;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-family: "Rowdies", sans-serif;
+}
+
